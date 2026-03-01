@@ -13,6 +13,13 @@ void sb(t_stack **b)
     write(1, "sb\n", 3);
 }
 
+void ss(t_stack **a, t_stack **b)
+{
+    swap_nodes(a);
+    swap_nodes(b);
+    write(1, "ss\n, 3);
+}
+
 void pa(t_stack **a, t_stack **b)
 {
     push_nodes(b, a);
@@ -37,6 +44,13 @@ void rb(t_stack **b)
     write(1, "rb\n", 3);
 }
 
+void rr(t_stack **a, t_stack **b)
+{
+    rotate_nodes(a);
+    rotate_nodes(b);
+    write(1, "rr\n", 3);
+}
+
 void rra(t_stack **a)
 {
     rev_rotate_nodes(a);
@@ -45,6 +59,7 @@ void rra(t_stack **a)
 
 void rrb(t_stack **b)
 {
+    rev_rotate_nodes(a);
     rev_rotate_nodes(b);
-    write(1, "rrb\n", 4);
+    write(1, "rrr\n", 4);
 }
