@@ -59,6 +59,12 @@ void rra(t_stack **a)
 
 void rrb(t_stack **b)
 {
+    rev_rotate_nodes(b);
+    write(1, "rrb\n", 4);
+}
+
+void rrr(t_stack **a, t_stack **b)
+{
     rev_rotate_nodes(a);
     rev_rotate_nodes(b);
     write(1, "rrr\n", 4);
